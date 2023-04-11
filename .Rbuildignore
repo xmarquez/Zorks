@@ -1,5 +1,5 @@
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^zorks.txt$
-^readme_figs^
+^readme_figs$
 ^\.github$

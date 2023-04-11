@@ -1,6 +1,6 @@
 Package: Zorks
 Type: Package
-Title: Play Zorks from the R console using OpenAI's text-davinci-003 model
+Title: Play Zork from the R console using OpenAI's Instruct GPT text completion models
 Version: 0.1.0
 Authors@R: 
     person(given = "Xavier",
@@ -8,8 +8,10 @@ Authors@R:
            role = c("aut", "cre"),
            email = "marquez.x@gmail.com",
            comment = c(ORCID = "0000-0001-7653-9334"))
-Description: This package allows you play Zorks from the R console if you have 
-    an OpenAI API key.
+Description: This package allows you play Zork from the R console if you have 
+    an OpenAI API key. It will also just allow you to interact with the 
+    Instruct-GPT models of OpenAI directly from the R console and save your 
+    interactions to a text file.
 License: GPL-3
 Depends:
     R (>= 3.5.0)
