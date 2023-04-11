@@ -2,6 +2,7 @@
 # Zorks
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/xmarquez/Zorks/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/xmarquez/Zorks/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 This package lets you play zork from the R console if you have an OpenAI key. It will also let you just converse with any of the [Instruct GPT](https://platform.openai.com/docs/models/gpt-3) models of OpenAI and save your chat afterwards in a text file; it's like using the [OpenAI playground](https://platform.openai.com/playground) but from your R console. These models are for text completion; they are not exactly like ChatGPT (and have fewer guardrails; for one thing, ChatGPT won't play Zork). 
