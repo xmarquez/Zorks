@@ -33,7 +33,10 @@ If you wanted to use a fully open-source model that you can run on a high-end ma
 library(Zorks)
 begin(model = "text-davinci-003")
 ```
+Here's an example output:
 
+![game capture](./readme_figs/example_game.PNG)
+ 
 If you don't have an accesible OpenAI key, you will be prompted to enter it when you begin a game. The key is saved in the environment variable `OPENAI_API_KEY`. You can also follow the instructions in the [openai](https://irudnyts.github.io/openai/) package to save the key to your `.Renviron` file.
 
 The function also has an `initial_prompt` argument that you can use to play a different game, or just use whatever model you are using in an interactive session.
