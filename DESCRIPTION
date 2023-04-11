@@ -16,7 +16,8 @@ Depends:
 Encoding: UTF-8
 LazyData: true
 Imports: 
-    openai
+    openai,
+    rstudioapi
 RoxygenNote: 7.2.3
 URL: https://github.com/xmarquez/Zorks
 BugReports: https://github.com/xmarquez/Zorks/issues
