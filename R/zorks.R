@@ -44,7 +44,7 @@ zorks <- function(prompt) {
 #'   at https://openai.com/pricing (scroll down to the Instruct GPT models).
 #' @param initial_prompt The initial prompt to start a game or a conversation.
 #'   The default is "Let's play zorks. You are in a maze of twisty passages, all
-#'   alike. It smells strongly of Grue..."
+#'   alike..."
 #' @param max_context_length The maximum number of words to pass as context to
 #'   the model each turn. The default is 400 words (approx 533 tokens); larger
 #'   contexts mean more memory, but also more cost. For the non-davinci model,
@@ -57,10 +57,17 @@ zorks <- function(prompt) {
 #' @export
 #'
 begin <- function(model = "text-curie-001",
-                  initial_prompt = "Let's play zorks. You are in a maze of twisty passages, all alike. It smells strongly of Grue...",
+                  initial_prompt =
+                    "Let's play zorks. You are in a maze of twisty passages, all alike...",
                   max_context_length = 400,
                   temperature = 1,
                   max_resp_tokens = 200) {
+
+  zorks_hist <<- character(0)
+  zorks_tokens <<- 0
+  approx_running_cost <<- 0
+  current_resp <<- character(0)
+
   if(!grepl("davinci", model)) {
     if(max_context_length > 1500) {
       message("Context length is too large. Truncating to 1500 words max.")

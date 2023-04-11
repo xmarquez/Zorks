@@ -6,8 +6,7 @@
 \usage{
 begin(
   model = "text-curie-001",
-  initial_prompt =
-    "Let's play zorks. You are in a maze of twisty passages, all alike. It smells strongly of Grue...",
+  initial_prompt = "Let's play zorks. You are in a maze of twisty passages, all alike...",
   max_context_length = 400,
   temperature = 1,
   max_resp_tokens = 200
@@ -21,7 +20,7 @@ at https://openai.com/pricing (scroll down to the Instruct GPT models).}
 
 \item{initial_prompt}{The initial prompt to start a game or a conversation.
 The default is "Let's play zorks. You are in a maze of twisty passages, all
-alike. It smells strongly of Grue..."}
+alike..."}
 
 \item{max_context_length}{The maximum number of words to pass as context to
 the model each turn. The default is 400 words (approx 533 tokens); larger
