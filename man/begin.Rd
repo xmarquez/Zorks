@@ -4,7 +4,12 @@
 \alias{begin}
 \title{Begin the game.}
 \usage{
-begin()
+begin(model = "text-curie-001")
+}
+\arguments{
+\item{model}{The model to use. The default is "text-curie-001". But you can
+use any of the GPT-3 models, including "text-davinci-003", the most
+powerful. Careful! Davinci-003 can quickly get expensive.}
 }
 \description{
 Type begin() to begin a game after loading a library, Q to quit. Otherwise
